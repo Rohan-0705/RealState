@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav i {
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 38px;
+
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav li button {
+    width: 179px;
+    height: 43px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #2495FD;
+    border: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+header>img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+header .back-Img {
+    width: 80%;
+    height: 350px;
+    background-image: url("/Imgs/back.png");
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+.property-tabs button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+}
+
+.search-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box {
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.search-box label {
+    font-size: 22px;
+
+}
+
+.search-box button {
+    padding: 10px;
+    width: 205px;
+    font-size: 22px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #2495FD;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search-box select {
+    font-size: 20px;
+    opacity: 0.3;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 381px);
+    column-gap: 10px;
+    row-gap: 20px;
+
+    justify-content: center;
+}
+
+.box h3,
+p {
+    padding-left: 17px;
+}
+
+.box p {
+    opacity: 0.6;
+    line-height: 30px;
+}
+
+.box h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h h2 {
+    font-weight: 100;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
+
+.h h4 {
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: 10px;
+    opacity: 0.5;
+    font-family: Arial, sans-serif;
+}
+
+.box img {
+    width: 381px;
+    height: 386px;
+}
+
+.box button {
+    grid-column: 1 / -1;
+    justify-self: center;
+
+    width: 280px;
+    height: 63px;
+    border: 2px solid #2495FD;
+    background-color: #FFFFFF;
+    color: #2495FD;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.sec {
+    display: grid;
+    margin: auto;
+    margin-top: 85px;
+    width: 85%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "img1 img1 img2 img6 img6"
+        "img1 img1 img3 img3 img4"
+        "img1 img1 img3 img3 img5";
+
+    column-gap: 5px;
+    row-gap: 5px;
+
+    justify-content: space-between;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.sec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img6 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.img6 p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.img hr {
+    width: 40%;
+    margin-top: 60px;
+    margin-left: 20px;
+    border-top: 4px solid #2495FD;
+}
+
+.ani {
+    margin: 77px auto;
+    width: 95%;
+    height: 776px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "fr from";
+
+    align-items: center;
+    padding: 30px 50px;
+    column-gap: 150px;
+
+    background-image: url("/RealState/IMg/f.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fro {
+    display: grid;
+    width: 100%;
+    height: 400px;
+
+    grid-area: fr;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    row-gap: 20px;
+    column-gap: 30px;
+
+}
+
+.fro h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.fro h2 {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.fro p {
+    font-size: 20px;
+    padding: 0;
+    color: white;
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    width: 385px;
+    height: 644px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+    grid-area: from;
+}
+
+.form hr {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form label {
+    display: block;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+.form input,
+select {
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.form .msg {
+    height: 100px;
+}
+
+.form button {
+    display: block;
+    width: 115px;
+    height: 28px;
+    margin: 14px auto 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #2495FD;
+    color: white;
+}
+
+.bb {
+    width: 90%;
+    margin: 1px auto;
+}
+
+.bb h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    font-weight: 30;
+}
+
+.bb h5 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 50;
+    font-family: Arial, sans-serif;
+}
+
+.bro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #5C5C5C;
+    height: 500px;
+    width: 100%;
+    border-top: 20px solid #2495FD;
+}
+
+.start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+}
+
+.start input {
+    width: 30%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.end {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 40%;
+    gap: 100px;
+}
+
+.end1 p {
+    color: #FFFFFF;
+    font-size: larger;
+    padding: 10px;
+    font-weight: 10;
+    font-family: Arial, sans-serif;
+}
+
+.end1 {
+    flex: 1;
+}
+
+.end2 {
+    flex: 1;
+    width: 620px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.end2 h3 {
+    font-size: xx-large;
+    color: #FFFFFF;
+    font-weight: 30;
+    font-family: Arial, sans-serif;
+}
+
+.end2 ul {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: larger;
+    padding: 2px 25px;
+}
+
+.end2 li {
+    padding-top: 8px;
+}
+
+.copy {
+    height: 78px;
+    text-align: center;
+    padding: 25px;
+    color: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo h2 {
+    margin: 0;
+    color: white;
+    font-size: xx-large;
+}
+
+footer hr {
+    color: #373737;
+}
+.circle{
+  margin: 50px;
+}
+.circle h2{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 50;
+}
+.circle h5{
+    margin-top: 5px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 40;
+    opacity: 0.6;
+}
+.cir{
+    margin: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cir div{
+  text-align: center;
+}
+.cir img{
+    width: 250px;
+}
+.cir h3{
+    padding-top: 20px;
+    font-size: x-large;
+}
+.cir h6{
+   font-size: 17px;
+   opacity: 0.5;
+   padding: 5px;
+}
+.cir p{
+    padding: 20px;
+    font-size: 20px;
+}
